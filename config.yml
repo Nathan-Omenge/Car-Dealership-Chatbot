@@ -1,0 +1,19 @@
+assistant_id: dealership_assistant
+language: en
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+- epochs: 50
+  name: DIETClassifier
+- name: EntitySynonymMapper
+- epochs: 50
+  name: ResponseSelector
+policies:
+- name: MemoizationPolicy
+- epochs: 50
+  max_history: 5
+  name: TEDPolicy
+- name: RulePolicy
+version: '3.1'

@@ -1,0 +1,312 @@
+nlu:
+- examples: '- hello
+
+    - hi there
+
+    - good morning
+
+    - good afternoon
+
+    - good evening
+
+    - hey
+
+    - hello, i''m looking for a car
+
+    - hi, i need help choosing a vehicle
+
+    - good day, what cars do you have?
+
+    - i''m interested in buying a car
+
+    - can you help me find a car?
+
+    - i''m shopping for a vehicle
+
+    - thank you
+
+    - thanks for your help
+
+    - that''s all i needed
+
+    - great, thanks
+
+    - i''ll think about it
+
+    - can i get back to you?
+
+    - i need to discuss with my family
+
+    - let me consider my options
+
+    - i''ll be in touch
+
+    - goodbye
+
+    - see you later
+
+    - have a good day
+
+    - thanks for your time'
+  intent: greet
+- examples: '- goodbye
+
+    - bye
+
+    - see you later
+
+    - thanks goodbye
+
+    - that''s all thanks'
+  intent: goodbye
+- examples: '- how much does this car cost?
+
+    - what''s your price range?
+
+    - can you give me a quote?
+
+    - are your prices negotiable?
+
+    - do you offer any discounts?
+
+    - what''s included in the price?
+
+    - are there any additional fees?
+
+    - what''s the total cost?
+
+    - can you price match?
+
+    - what''s your best price?
+
+    - do you offer financing?
+
+    - what are your payment options?
+
+    - can i pay in installments?
+
+    - what''s the [mini](make)mum down payment?
+
+    - what interest rates do you offer?
+
+    - what''s the monthly payment?
+
+    - how long can i finance for?
+
+    - do you work with banks?
+
+    - can i get pre-approved?
+
+    - what credit score do i need?
+
+    - do you accept trade-ins?
+
+    - how much is my car worth as trade?
+
+    - can i exchange my current car?
+
+    - do you buy cars outright?
+
+    - what condition does my trade need to be?'
+  intent: get_price
+- examples: '- what cars do you have available?
+
+    - show me all your vehicles
+
+    - do you have any [suv](body_type)s?
+
+    - what''s your [cheap](price_range)est car?
+
+    - show me your most [expensive](price_range) vehicles
+
+    - what automatic cars do you have?
+
+    - do you have any manual transmission cars?
+
+    - show me fuel-efficient cars
+
+    - what''s the newest model you have?
+
+    - do you have any used cars?
+
+    - show me cars under [$20,000](price_range)
+
+    - do you have any 2024 models?
+
+    - what [diesel](fuel_type) vehicles do you have?
+
+    - do you have any [hybrid](fuel_type) cars?
+
+    - show me [electric](fuel_type) vehicles
+
+    - what [pickup](body_type) [truck](body_type)s are available?
+
+    - do you have any convertibles?
+
+    - show me 7-seater vehicles
+
+    - what compact cars do you have?
+
+    - do you have any [sports car](body_type)s?
+
+    - show me cars with low mileage
+
+    - do you have any [luxury](price_range) vehicles?
+
+    - what reliable brands do you carry?
+
+    - show me cars with good safety ratings
+
+    - do you have any certified pre-owned vehicles?'
+  intent: find_vehicle
+- examples: '- what''s the fuel consumption of this car?
+
+    - does this car come in automatic transmission?
+
+    - what engine size does this vehicle have?
+
+    - how many cylinders does this car have?
+
+    - what safety features are included?
+
+    - is this available in manual transmission?
+
+    - what''s the ground clearance?
+
+    - does this car have air conditioning?
+
+    - what''s the seating capacity?
+
+    - is this front-wheel or all-wheel drive?
+
+    - what''s the horsepower of this engine?
+
+    - what type of brakes does it have?
+
+    - does it have cruise control?
+
+    - is there a sunroof available?
+
+    - what entertainment system does it have?
+
+    - does it have parking sensors?
+
+    - what''s the cargo space like?
+
+    - is there a spare tire included?
+
+    - what''s the warranty on this vehicle?
+
+    - how reliable is this car model?
+
+    - how fast can this car go?
+
+    - what''s the acceleration like?
+
+    - does it have good handling?
+
+    - what''s the towing capacity?
+
+    - is it good for long distance driving?'
+  intent: get_specs
+- examples: '- what are your business hours?
+
+    - where are you located?
+
+    - how can i contact you?
+
+    - what''s your phone number?
+
+    - do you have a website?
+
+    - are you open on weekends?
+
+    - do you have multiple locations?
+
+    - how do i get directions to your place?
+
+    - what''s your email address?
+
+    - are you on social media?
+
+    - can i schedule a test drive?
+
+    - do you provide vehicle inspection?
+
+    - do you offer delivery service?
+
+    - can you help with registration?
+
+    - do you provide insurance assistance?
+
+    - do you have a service center?
+
+    - do you offer maintenance services?
+
+    - can you help with paperwork?
+
+    - do you provide roadside assistance?
+
+    - what warranty do you offer?
+
+    - what''s your return policy?
+
+    - how long does the buying process take?
+
+    - what documents do i need?
+
+    - can i reserve a vehicle?
+
+    - how do i schedule an appointment?'
+  intent: get_support
+- examples: '- i don''t understand
+
+    - can you explain that again?
+
+    - what do you mean?
+
+    - can you be more specific?
+
+    - i''m confused
+
+    - can you help me?
+
+    - i''m not sure what i''m looking for
+
+    - can you recommend something?
+
+    - what would you suggest?
+
+    - i''m a first-time buyer
+
+    - i don''t know much about cars
+
+    - can you simplify that?
+
+    - what are my options?
+
+    - how does this work?
+
+    - can you walk me through this?
+
+    - what''s your recommendation?
+
+    - which one is better?
+
+    - what do you think?
+
+    - is this a good choice?
+
+    - am i making the right decision?
+
+    - what would most people choose?
+
+    - is this reliable?
+
+    - will this meet my needs?
+
+    - is this worth the price?
+
+    - should i wait for a better deal?'
+  intent: clarify
+version: '3.1'

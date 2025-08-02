@@ -1,0 +1,67 @@
+entities:
+- make
+- model
+- year
+- price_range
+- fuel_type
+- body_type
+intents:
+- greet
+- goodbye
+- get_price
+- find_vehicle
+- get_specs
+- get_support
+- clarify
+responses:
+  utter_ask_body_type:
+    text: What type of vehicle are you looking for? SUV, sedan, hatchback, or something
+      else?
+  utter_ask_budget:
+    text: What's your budget range? This helps me show you the best available options.
+  utter_ask_fuel_type:
+    text: Do you prefer petrol, diesel, hybrid, or electric vehicles?
+  utter_ask_make:
+    text: Which vehicle make interests you? We have Toyota, Honda, Nissan, BMW, and
+      many others in stock.
+  utter_clarify:
+    text: I'm not sure I understand. Could you please tell me more about what you're
+      looking for?
+  utter_default:
+    text: I can help you find vehicles, get pricing information, or answer questions
+      about our inventory. What would you like to know?
+  utter_goodbye:
+    text: Thank you for visiting! Feel free to contact us if you need any assistance.
+      Have a great day!
+  utter_greet:
+    text: Hello! Welcome to our dealership. I can help you find the perfect vehicle.
+      What are you looking for today?
+  utter_no_vehicles_found:
+    text: I couldn't find vehicles matching those exact criteria. Would you like to
+      adjust your search or see similar options?
+  utter_vehicles_found:
+    text: Great! I found several vehicles that match your criteria. Let me show you
+      the details.
+slots:
+  body_type:
+    influence_conversation: true
+    type: text
+  fuel_type:
+    influence_conversation: true
+    type: text
+  make:
+    influence_conversation: true
+    type: text
+  model:
+    influence_conversation: true
+    type: text
+  price_range:
+    influence_conversation: true
+    type: text
+  search_results:
+    influence_conversation: false
+    type: any
+  year:
+    influence_conversation: false
+    type: text
+version: '3.1'

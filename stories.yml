@@ -1,0 +1,30 @@
+stories:
+- steps:
+  - intent: greet
+  - action: utter_greet
+  - entities:
+    - make
+    intent: find_vehicle
+  - action: utter_vehicles_found
+  story: vehicle search by make
+- steps:
+  - intent: get_price
+  - action: utter_ask_budget
+  - entities:
+    - price_range
+    intent: find_vehicle
+  - action: utter_vehicles_found
+  story: price inquiry flow
+- steps:
+  - intent: get_specs
+  - action: utter_ask_make
+  - entities:
+    - make
+    intent: find_vehicle
+  - action: utter_vehicles_found
+  story: specifications request
+- steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  story: goodbye flow
+version: '3.1'

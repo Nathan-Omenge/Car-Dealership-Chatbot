@@ -1,0 +1,14 @@
+rules:
+- rule: Say hello when user greets
+  steps:
+  - intent: greet
+  - action: utter_greet
+- rule: Say goodbye when user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Ask for clarification when confused
+  steps:
+  - intent: clarify
+  - action: utter_clarify
+version: '3.1'
