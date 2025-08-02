@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: rasa-dealership-chatbot
+    env: python
+    runtime: python-3.9.18
+    buildCommand: pip install -r requirements.txt && rasa train
+    startCommand: rasa run --enable-api --cors '*' --port $PORT --host 0.0.0.0
